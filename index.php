@@ -7,10 +7,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1">
 		<title>Waldorf Weddings</title>
-		<meta name="copyright" content="">
-		<meta name="robots" content="index, follow">
+		<meta name="robots" content="noindex, nofollow">
 		<meta name="description" content="">
-		<meta name="keywords" content="">
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="images/favicon.ico" rel="icon" type="image/ico">
 		<link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" type="text/css">
@@ -25,8 +25,16 @@
 		</script>
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
 		<script src="js/turn.min.js" type="text/javascript"></script>
-		<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-		<link href="images/favicon.ico" rel="icon" type="image/ico">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+			ga('create', 'UA-6570849-1', 'michaelmallari.com');
+			ga('send', 'pageview');
+		</script>
 	</head>
 
 
@@ -79,7 +87,10 @@
 
 
 
-<!--  begin: jQuery  -->
+
+
+
+
 		<script type="text/javascript">
 			$(window).ready(function() {
 				$('#magazine').turn({
@@ -89,7 +100,7 @@
 					elevation:50,
 					when: {
 						turned: function(e, page) {
-/*console.log('Current view: ', $(this).turn('view'));*/
+							/*console.log('Current view: ', $(this).turn('view'));*/
 						}
 					}
 				});
@@ -104,18 +115,5 @@
 				}
 			});
 		</script>
-<!--  end: jQuery  -->
-
-
-
-
-<!--  begin: Google Analytics  -->
-		<script type="text/javascript" language="JavaScript">
-
-
-		</script>
-<!--  end: Google Analytics  -->
 	</body>
-
 </html>
-
